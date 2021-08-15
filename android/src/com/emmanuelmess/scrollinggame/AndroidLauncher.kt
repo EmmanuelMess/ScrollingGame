@@ -8,6 +8,7 @@ class AndroidLauncher : AndroidApplication() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val config = AndroidApplicationConfiguration().also {
+            it.useImmersiveMode = true
             it.useAccelerometer = false
             it.useCompass = false
             it.numSamples = 2
